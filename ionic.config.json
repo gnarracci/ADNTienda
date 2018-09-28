@@ -1,0 +1,7 @@
+{
+  "name": "ADNTienda",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
