@@ -14,6 +14,8 @@ import { HogarPage } from '../pages/hogar/hogar';
 import { ModayAccesoriosPage } from '../pages/moday-accesorios/moday-accesorios';
 import { MasPage } from '../pages/mas/mas';
 import { AdnPage } from '../pages/adn/adn';
+import { LoginPage } from './../pages/login/login'
+import { RegisterPage } from './../pages/register/register';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { AdnPage } from '../pages/adn/adn';
     HogarPage,
     ModayAccesoriosPage,
     MasPage,
-    AdnPage
+    AdnPage,
+    LoginPage,
+    RegisterPage
   ],
   imports: [
   BrowserModule,
@@ -43,7 +47,9 @@ import { AdnPage } from '../pages/adn/adn';
     HogarPage,
     ModayAccesoriosPage,
     MasPage,
-    AdnPage
+    AdnPage,
+    LoginPage,
+    RegisterPage
 
   ],
   providers: [
