@@ -14,8 +14,7 @@ import { HogarPage } from '../pages/hogar/hogar';
 import { ModayAccesoriosPage } from '../pages/moday-accesorios/moday-accesorios';
 import { MasPage } from '../pages/mas/mas';
 import { AdnPage } from '../pages/adn/adn';
-import { LoginPage } from './../pages/login/login'
-import { RegisterPage } from './../pages/register/register';
+
 
 @NgModule({
   declarations: [
@@ -28,13 +27,12 @@ import { RegisterPage } from './../pages/register/register';
     HogarPage,
     ModayAccesoriosPage,
     MasPage,
-    AdnPage,
-    LoginPage,
-    RegisterPage
+    AdnPage    
   ],
   imports: [
   BrowserModule,
-    IonicModule.forRoot(MyApp)
+  IonicModule.forRoot(MyApp)
+  
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -47,10 +45,7 @@ import { RegisterPage } from './../pages/register/register';
     HogarPage,
     ModayAccesoriosPage,
     MasPage,
-    AdnPage,
-    LoginPage,
-    RegisterPage
-
+    AdnPage
   ],
   providers: [
     StatusBar,

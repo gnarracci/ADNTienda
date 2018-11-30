@@ -11,9 +11,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) { }
 
-  acceso() {
-    this.navCtrl.push(LoginPage);
-  }
+  
 
 
 }

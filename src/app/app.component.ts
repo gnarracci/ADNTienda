@@ -28,8 +28,8 @@ export class MyApp {
 
     this.pages = [
       { titulo: 'Inicio', component: HomePage, icon: 'home' },
-      { titulo: 'Tecnología', component: TecnologiaPage, icon: 'person' },
-      { titulo: 'Zona Gamer', component: ZonaGamerPage, icon: 'information-circle' },
+      { titulo: 'Tecnología', component: TecnologiaPage, icon: 'wifi' },
+      { titulo: 'Zona Gamer', component: ZonaGamerPage, icon: 'logo-snapchat' },
       { titulo: 'Zona Fit', component: ZonaFitPage, icon: 'mail' },
       { titulo: 'Audio y Video', component: AudioyVideoPage, icon: 'planet' },
       { titulo: 'Hogar', component: HogarPage, icon: 'alarm' },
