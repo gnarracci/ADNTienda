@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
-/**
- * Generated class for the HogarPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,11 +10,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HogarPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private InAppBrowser: InAppBrowser) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HogarPage');
+  openApp35() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/hogar-cocina-licuadoras-y-batidoras-248","_self");
+  }
+
+  openApp36() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/hogar-cocina-parrillas-256","_self");
+  }
+
+  openApp37() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/hogar-cocina-ollas-250","_self");
   }
 
 }

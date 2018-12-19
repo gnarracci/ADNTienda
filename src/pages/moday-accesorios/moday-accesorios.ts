@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ModayAccesoriosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ModayAccesoriosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private InAppBrowser: InAppBrowser) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ModayAccesoriosPage');
+  openApp38() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/hogar-cuidado-personal-planchas-para-cabello-264","_self");
+  }
+
+  openApp39() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/hogar-cuidado-personal-para-ellas-133","_self");
+  }
+
+  openApp40() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/hogar-cuidado-personal-secadoras-266","_self");
   }
 
 }

@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the TecnologiaPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TecnologiaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private InAppBrowser: InAppBrowser) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TecnologiaPage');
+  openApp23() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/celulares-378","_self");
+  }
+
+  openApp24() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/celulares-mas-vendidos-45","_self");
+  }
+
+  openApp25() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/celulares-tablet-428","_self");
   }
 
 }

@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
-/**
- * Generated class for the AdnPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,11 +10,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AdnPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private InAppBrowser: InAppBrowser) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AdnPage');
+  openApp44() {
+    this.InAppBrowser.create("https://www.adntienda.com/page/nosotros-adn-tienda","_self");
+  }
+
+  openApp45() {
+    this.InAppBrowser.create("https://www.adntienda.com/page/nosotros-adn-tienda","_self");
   }
 
 }

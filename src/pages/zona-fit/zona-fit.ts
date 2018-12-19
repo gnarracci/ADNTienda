@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ZonaFitPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ZonaFitPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private InAppBrowser: InAppBrowser) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ZonaFitPage');
+  openApp29() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/zona-fit-143","_self");
+  }
+
+  openApp30() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/zona-fit-otros-productos-botellas-hidratacion-149","_self");
+  }
+
+  openApp31() {
+    this.InAppBrowser.create("https://www.adntienda.com/shop/category/tecnologia-para-tu-vehiculo-62","_self");
   }
 
 }

@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
-/**
- * Generated class for the ZonaGamerPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,11 +10,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ZonaGamerPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private InAppBrowser: InAppBrowser) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ZonaGamerPage');
-  }
+openApp26() {
+  this.InAppBrowser.create("https://www.adntienda.com/shop/category/zona-gamer-consolas-68","_self");
+}
+
+openApp27() {
+  this.InAppBrowser.create("https://www.adntienda.com/shop/category/tecnologia-pantallas-pantallas-283","_self");
+}
+
+openApp28() {
+  this.InAppBrowser.create("https://www.adntienda.com/shop/category/tecnologia-top-audifonos-185","_self");
+}
 
 }
